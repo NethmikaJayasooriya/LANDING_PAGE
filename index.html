@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UrbanRoots | The Future of Urban Farming</title>
+    <title>UrbanRoots | Gamified Smart Farming</title>
     
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
     <nav>
         <div class="logo-container">
@@ -18,125 +21,188 @@
         
         <ul class="nav-links">
             <li><a href="#home" class="active-link">Home</a></li>
-            <li><a href="#mission">Mission</a></li>
-            <li><a href="#tech">Features</a></li>
+            <li><a href="#problem">The Problem</a></li>
+            <li><a href="#how-it-works">How it Works</a></li>
+            <li><a href="#features">Features</a></li>
             <li><a href="#team">Team</a></li>
         </ul>
         
-        <a href="#download" class="btn-primary glow-on-hover">Start Playing</a>
+        <a href="#download" class="btn-primary glow-on-hover">Download App <i class="fa-brands fa-android"></i></a>
         
         <div class="mobile-menu-icon">
             <i class="fa-solid fa-bars"></i>
         </div>
     </nav>
 
-    <header id="home" class="hero">
+    <header id="home" class="hero section-spacing">
         <div class="ambient-light"></div>
 
         <div class="hero-content">
             <div class="badge-pill">
-                <i class="fa-solid fa-gamepad"></i> 
-                <span>Version 1.0</span>
+                <i class="fa-solid fa-microchip"></i> 
+                <span>Powered by ESP32 & TensorFlow</span>
             </div>
             <h1>Nature, Now <br><span class="gradient-text">Gamified.</span></h1>
-            <p>Transform your balcony into a thriving micro-farm. Connect your plants to the <strong>UrbanRoots App</strong>, meet your Digital Twin, and earn rewards for keeping nature alive.</p>
+            <p>
+                UrbanRoots connects your physical plants to a digital world. 
+                Use our <strong>IoT Sensor</strong> OR <strong>Manual Mode</strong> to turn your balcony garden into a 
+                living "Tamagotchi." 
+            </p>
             
             <div class="cta-group">
-                <a href="#mission" class="btn-primary glow-on-hover">Meet Your Plant Pet</a>
-                <a href="#tech" class="btn-secondary"><i class="fa-solid fa-microchip"></i> See Tech</a>
+                <a href="#problem" class="btn-primary glow-on-hover">Why UrbanRoots?</a>
+                <a href="#features" class="btn-secondary"><i class="fa-solid fa-book-open"></i> Our Technology</a>
             </div>
 
             <div class="hero-stats">
                 <div class="stat">
-                    <span class="num">100+</span>
-                    <span class="label">Plants Connected</span>
+                    <span class="num">7-in-1</span>
+                    <span class="label">Soil Sensor</span>
                 </div>
                 <div class="stat">
                     <span class="num">98%</span>
                     <span class="label">AI Accuracy</span>
                 </div>
+                <div class="stat">
+                    <span class="num">50+</span>
+                    <span class="label">Sri Lankan Crops</span>
+                </div>
             </div>
         </div>
         
         <div class="hero-visual">
-            <div class="glowing-ring"></div>
+            <div class="capsule-glow"></div>
             
-            <div class="orbit-container">
-                <div class="orbit-icon icon-heart"><i class="fa-solid fa-heart"></i></div>
-                <div class="orbit-icon icon-water"><i class="fa-solid fa-droplet"></i></div>
-            </div>
+            <div class="portal-wrapper">
+                <div class="video-container-capsule">
+                    <video autoplay loop muted playsinline class="pet-video">
+                        <source src="assets/a_cute_stylized_3d_plant_character_with.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
 
-            <img src="assets/Home1.jpg" alt="Digital Plant Pet Interface" class="main-hero-img">
-            
-            <div class="floating-card card-1">
-                <i class="fa-solid fa-triangle-exclamation"></i> Moisture: 15%
-            </div>
-            <div class="floating-card card-2">
-                <i class="fa-solid fa-face-sad-tear"></i> Pet: Thirsty!
+                <div class="floating-card card-left glow-card">
+                    <div class="icon-circle"><i class="fa-solid fa-seedling"></i></div>
+                    <div>
+                        <span class="card-label">Status</span>
+                        <span class="card-value">Thriving 🌿</span>
+                    </div>
+                </div>
+
+                <div class="floating-card card-right glow-card">
+                    <div class="icon-circle icon-happy"><i class="fa-solid fa-face-smile"></i></div>
+                    <div>
+                        <span class="card-label">Mood</span>
+                        <span class="card-value">Happy! 😄</span>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
 
-    <section id="mission" class="mission-section reveal">
-        <div class="mission-header">
-            <h2>Reclaiming the <span class="highlight-text">Concrete Jungle</span></h2>
-            <p class="lead">Urban spaces are shrinking, but the human need for fresh food is growing.</p>
+    <section id="problem" class="problem-section section-spacing reveal">
+        <div class="problem-header-container">
+            <div class="badge-pill-red">
+                <i class="fa-solid fa-triangle-exclamation"></i> The Problem
+            </div>
+            <h2>Urban Green Spaces Are <br><span class="highlight-danger">Disappearing</span></h2>
+            <p class="problem-lead">
+                As cities expand, nature retreats. Sri Lanka's urban areas are losing green 
+                spaces. Many want to <strong>grow their own food</strong> but lack knowledge.
+            </p>
         </div>
 
-        <div class="mission-grid">
-            <div class="mission-card">
-                <div class="icon-glow"><i class="fa-solid fa-building-wheat"></i></div>
-                <h3>Vertical Farming</h3>
-                <p>Maximize yield in small spaces by utilizing vertical structures optimized for balconies.</p>
+        <div class="problem-grid">
+            <div class="problem-card">
+                <div class="problem-icon"><i class="fa-regular fa-building"></i></div>
+                <div class="problem-stat">65%</div>
+                <h4>Global urban population by 2025</h4>
+                <p>Cities are growing rapidly, but green spaces are shrinking.</p>
             </div>
-            <div class="mission-card">
-                <div class="icon-glow"><i class="fa-solid fa-cloud-sun-rain"></i></div>
-                <h3>Climate Adaptive</h3>
-                <p>AI algorithms adjust watering schedules based on local Sri Lankan weather patterns.</p>
+
+            <div class="problem-card">
+                <div class="problem-icon"><i class="fa-solid fa-arrow-trend-down"></i></div>
+                <div class="problem-stat">0.46 km²</div>
+                <h4>Annual green space loss in Colombo</h4>
+                <p>Urban development is consuming valuable green areas.</p>
             </div>
-            <div class="mission-card">
-                <div class="icon-glow"><i class="fa-solid fa-users-rays"></i></div>
-                <h3>Community Growth</h3>
-                <p>Share your harvest and seeds with neighbors to build a sustainable local food network.</p>
+
+            <div class="problem-card">
+                <div class="problem-icon"><i class="fa-solid fa-user-group"></i></div>
+                <div class="problem-stat">80%</div>
+                <h4>Want to garden but don't know how</h4>
+                <p>Lack of knowledge keeps people from starting.</p>
             </div>
         </div>
     </section>
 
-    <section id="tech" class="tech-section reveal">
+    <section id="how-it-works" class="steps-section section-spacing reveal">
         <div class="section-header">
-            <h2>Powered by <span class="gradient-text">Technologies</span></h2>
-            <p>Underneath the game lies a serious agricultural engine.</p>
+            <h2>Two Ways to <span class="gradient-text">Play</span></h2>
+            <p>Whether you have the hardware or not, your garden comes to life.</p>
+        </div>
+
+        <div class="steps-container">
+            <div class="step-box">
+                <div class="step-number">01</div>
+                <h3>Choose Mode</h3>
+                <p>Select <strong>IoT Mode</strong> to sync with our sensor, or <strong>Manual Mode</strong> to log watering yourself.</p>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step-box">
+                <div class="step-number">02</div>
+                <h3>Sync Data</h3>
+                <p>The AI analyzes your inputs to check if your plant is stressed or thriving.</p>
+            </div>
+            <div class="step-connector"></div>
+            <div class="step-box">
+                <div class="step-number">03</div>
+                <h3>Evolve Pet</h3>
+                <p>Your <strong>Digital Twin</strong> reacts! Maintain a streak of healthy care to earn XP and evolve.</p>
+            </div>
+        </div>
+
+        <div class="manual-mode-banner">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <p><strong>No Sensor? No Problem.</strong> You can fully enjoy UrbanRoots by manually updating status!</p>
+        </div>
+    </section>
+
+    <section id="features" class="tech-section section-spacing reveal">
+        <div class="section-header">
+            <h2>The <span class="gradient-text">Engine</span> Inside</h2>
+            <p>Built with Flutter, NestJS, and Edge AI.</p>
         </div>
 
         <div class="tech-grid">
-            <div class="tech-card">
-                <div class="icon-box"><i class="fa-solid fa-microchip"></i></div>
-                <h3>ESP32 IoT Node</h3>
-                <p>Capacitive soil sensing hardware with Kalman Filter noise reduction for accurate, real-time environmental data.</p>
-            </div>
-            
-            <div class="tech-card">
-                <div class="icon-box"><i class="fa-solid fa-robot"></i></div>
-                <h3>Edge AI Vision</h3>
-                <p>Instant disease detection using MobileNetV2 & TensorFlow Lite. Processes data on-device for zero latency.</p>
-            </div>
-            
-            <div class="tech-card">
-                <div class="icon-box"><i class="fa-solid fa-shop"></i></div>
-                <h3>Local Market</h3>
-                <p>Geolocation-based supply chain connecting you with nearby sellers for organic seeds and fertilizers.</p>
+            <div class="tech-card manual-card">
+                <div class="icon-box"><i class="fa-solid fa-hand-pointer"></i></div>
+                <h3>Manual Mode</h3>
+                <p>Don't have hardware? Log daily watering manually. The app estimates health based on local weather.</p>
             </div>
 
             <div class="tech-card">
-                <div class="icon-box"><i class="fa-solid fa-trophy"></i></div>
-                <h3>Gamified Rewards</h3>
-                <p>Earn XP for every watering task. Unlock badges, climb the leaderboard, and evolve your digital pet.</p>
+                <div class="icon-box"><i class="fa-solid fa-microchip"></i></div>
+                <h3>IoT Sensor Mode</h3>
+                <p>For precision, plug in the <strong>ESP32 Node</strong>. It automates NPK and Moisture data collection.</p>
+            </div>
+            
+            <div class="tech-card">
+                <div class="icon-box"><i class="fa-solid fa-eye"></i></div>
+                <h3>AI Disease Doctor</h3>
+                <p><strong>MobileNetV2</strong> detects 39 distinct plant diseases instantly using your phone camera.</p>
+            </div>
+            
+            <div class="tech-card">
+                <div class="icon-box"><i class="fa-solid fa-brain"></i></div>
+                <h3>AI Crop Advisor</h3>
+                <p>A specialized <strong>LLM</strong> analyzes your balcony size to suggest the perfect crops.</p>
             </div>
         </div>
     </section>
 
-    <section id="team" class="team-section reveal">
-        <h2>Meet the <span class="gradient-text">Innovators</span></h2>
+    <section id="team" class="team-section section-spacing reveal">
+        <h2>Built by <span class="gradient-text"> 2025 SDGP Group CS-57</span></h2>
         
         <div class="carousel-container">
             <button class="nav-btn prev-btn" onclick="slideLeft()">
@@ -145,34 +211,58 @@
             
             <div class="team-carousel" id="teamCarousel">
                 <div class="team-card">
-                    <div class="photo-frame"><img src="assets/team-member-1.jpg" alt="Member"></div>
-                    <h3>Name 1</h3>
-                    <p class="role">Team Lead & Backend</p>
+                    <div class="photo-frame"><img src="assets/Members/Shane.png" alt="Member"></div>
+                    <h3>Shane</h3>
+                    <p class="role">Group Member</p>
+                    <div class="team-socials">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
                 </div>
                 <div class="team-card">
-                    <div class="photo-frame"><img src="assets/team-member-2.jpg" alt="Member"></div>
-                    <h3>Name 2</h3>
-                    <p class="role">AI Specialist</p>
+                    <div class="photo-frame"><img src="assets/Members/Nethmika.png" alt="Member"></div>
+                    <h3>Nethmika</h3>
+                    <p class="role">Group Member</p>
+                    <div class="team-socials">
+                        <a href="https://github.com/NethmikaJayasooriya"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/nethmika-jayasooriya-a54748312/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
                 </div>
                 <div class="team-card">
-                    <div class="photo-frame"><img src="assets/team-member-3.jpg" alt="Member"></div>
-                    <h3>Name 3</h3>
-                    <p class="role">IoT Architect</p>
+                    <div class="photo-frame"><img src="assets/Members/Himasara.png" alt="Member"></div>
+                    <h3>Himasara</h3>
+                    <p class="role">Group Member</p>
+                    <div class="team-socials">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
                 </div>
                 <div class="team-card">
-                    <div class="photo-frame"><img src="assets/team-member-4.jpg" alt="Member"></div>
-                    <h3>Name 4</h3>
-                    <p class="role">Mobile Developer</p>
+                    <div class="photo-frame"><img src="assets/Members/Thevinu.jpg" alt="Member"></div>
+                    <h3>Thevinu</h3>
+                    <p class="role">Group Member</p>
+                    <div class="team-socials">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
                 </div>
                 <div class="team-card">
-                    <div class="photo-frame"><img src="assets/team-member-5.jpg" alt="Member"></div>
-                    <h3>Name 5</h3>
-                    <p class="role">UI/UX Designer</p>
+                    <div class="photo-frame"><img src="assets/Members/Pamina.jpg" alt="Member"></div>
+                    <h3>Pamina</h3>
+                    <p class="role">Group Member</p>
+                    <div class="team-socials">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
                 </div>
-                <div class="team-card">
-                    <div class="photo-frame"><img src="assets/team-member-6.jpg" alt="Member"></div>
-                    <h3>Name 6</h3>
-                    <p class="role">Frontend Dev</p>
+                  <div class="team-card">
+                    <div class="photo-frame"><img src="assets/Members/Nethmi.jpg" alt="Member"></div>
+                    <h3>Nethmi</h3>
+                    <p class="role">Group Member</p>
+                    <div class="team-socials">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
 
@@ -182,8 +272,43 @@
         </div>
     </section>
 
+    <section id="download" class="cta-section reveal">
+        <div class="cta-card">
+            <div class="cta-badge">
+                <i class="fa-solid fa-bolt"></i> Coming Soon
+            </div>
+            
+            <h2>Ready to Transform <br> Your <span class="highlight-text">Urban Garden?</span></h2>
+            
+            <p class="cta-desc">
+                Join thousands of Sri Lankan urban gardeners who are growing smarter, 
+                not harder. Download UrbanRoots today!
+            </p>
+
+            <div class="cta-buttons">
+                <button class="btn-primary btn-large">
+                    <i class="fa-brands fa-android"></i> Download for Android
+                </button>
+                
+                <button class="btn-secondary btn-large">
+                    <i class="fa-brands fa-apple"></i> Download for iOS
+                </button>
+            </div>
+
+            <div class="cta-features">
+                <span><i class="fa-solid fa-check"></i> Free to Download</span>
+                <span><i class="fa-solid fa-check"></i> IoT Device Included</span>
+                <span><i class="fa-solid fa-check"></i> Made for Sri Lanka</span>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="footer-content">
+            <div class="footer-brand">
+                <h3 style="color:white; margin-bottom:10px;">UrbanRoots</h3>
+                <p style="color:var(--text-gray); font-size:0.9rem;">Cultivating the future.</p>
+            </div>
             <ul class="footer-links">
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">Terms of Service</a></li>
@@ -196,34 +321,11 @@
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2025 SDGP Group CS-57. Cultivating the Future.</p>
+            <p>&copy; 2025 SDGP Group CS-57. Westminster/IIT.</p>
         </div>
     </footer>
 
-    <script>
-        function slideRight() {
-            document.getElementById('teamCarousel').scrollBy({ left: 320, behavior: 'smooth' });
-        }
-        function slideLeft() {
-            document.getElementById('teamCarousel').scrollBy({ left: -320, behavior: 'smooth' });
-        }
-
-        function reveal() {
-            var reveals = document.querySelectorAll('.reveal');
-            var windowHeight = window.innerHeight;
-            var elementVisible = 100;
-
-            for (var i = 0; i < reveals.length; i++) {
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add('active');
-                }
-            }
-        }
-
-        window.addEventListener('scroll', reveal);
-        reveal();
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
