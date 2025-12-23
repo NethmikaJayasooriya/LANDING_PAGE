@@ -83,3 +83,27 @@ window.addEventListener('scroll', () => {
 
 // Trigger once on load to show visible elements
 reveal();
+
+/* ===== MOBILE NAV MENU FIX ===== */
+
+const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+const navLinks = document.querySelector('.nav-links');
+
+// Toggle menu on hamburger click
+mobileMenuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+// Close menu when a link is clicked
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+    });
+});
+
+// Close menu when switching to desktop view
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        navLinks.classList.remove('active');
+    }
+});
